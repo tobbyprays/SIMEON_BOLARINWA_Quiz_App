@@ -1,0 +1,68 @@
+<resources>
+
+    <!--Parent layout application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="nameOfPlayer" >
+        <!-- Customize the questions theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/questionTitleColor</item>
+        <item name="android:background">@color/questionBackgroundColor</item>
+        <item name="android:textColorHint">@color/questionTitleColor</item>
+    </style>
+    <style name="questions" >
+        <!-- Customize the questions theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/questionTitleColor</item>
+        <item name="android:background">@color/questionBackgroundColor</item>
+    </style>
+    <style name="questionBody" >
+        <!-- Customize the questions body theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">@color/questionColor</item>
+    </style>
+    <style name="checkBoxes" >
+        <!-- Customize the questions body theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">@color/questionColor</item>
+
+    </style>
+    <style name="editTextBoxes" >
+        <!-- Customize the editText body theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">@color/questionColor</item>
+        <item name="android:textColorHint">@color/questionColor</item>
+    </style>
+    <style name="submission" >
+        <!-- Customize the submit quiz button theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/questionTitleColor</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+</resources>
