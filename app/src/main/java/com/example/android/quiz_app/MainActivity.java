@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
         EditText editText= (EditText) findViewById(R.id.name_of_player);
         String name= editText.getText().toString();
         //tests the answers the player provided against the right answers either clicked or entered as text from questions 1-8
-        CheckBox question_one= (CheckBox) findViewById(R.id.q1Option3);
-        boolean answerOne= question_one.isChecked();
-            if (answerOne){
+        RadioGroup question_one= (RadioGroup) findViewById(R.id.radioQ1);
+        String answerOne= ((RadioButton) findViewById(question_one.getCheckedRadioButtonId())).getText().toString();
+        String answerA=getString(R.string.Q1option3);
+            if (answerOne==answerA ){
                 score++;
             }
             else {
@@ -38,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 fails++;
             }
 
-        CheckBox question_two= (CheckBox) findViewById(R.id.q2Option3);
-        boolean answerTwo= question_two.isChecked();
-            if (answerTwo){
+        RadioGroup question_two= (RadioGroup) findViewById(R.id.radioQ2);
+        String answerTwo= ((RadioButton) findViewById(question_two.getCheckedRadioButtonId())).getText().toString();
+        String answerB=getString(R.string.Q1option3);
+            if (answerTwo == answerB){
                 score++;
             }
             else {
@@ -56,13 +60,20 @@ public class MainActivity extends AppCompatActivity {
                 missedQuestions+= "\n"+ "The answer to Question 3 is: PATMOS";
                 fails++;
             }
-        CheckBox question_four= (CheckBox) findViewById(R.id.q4Option2);
-        boolean answerFour= question_four.isChecked();
-            if (answerFour){
+        CheckBox question_fourA= (CheckBox) findViewById(R.id.q4Option2);
+        CheckBox question_fourB= (CheckBox) findViewById(R.id.q4Option3);
+        CheckBox question_fourC= (CheckBox) findViewById(R.id.q4Option1);
+        CheckBox question_fourD= (CheckBox) findViewById(R.id.q4Option4);
+        boolean answerFourA= question_fourA.isChecked();
+        boolean answerFourB= question_fourB.isChecked();
+        boolean answerFourC= question_fourC.isChecked();
+        boolean answerFourD= question_fourD.isChecked();
+        //ensures that the player is only awarded a score for choosing only the two correct options
+            if (answerFourA == true && answerFourB == true && answerFourC == false && answerFourD == false ){
                 score++;
             }
-            else {
-                missedQuestions+= "\n"+ "The answer to Question 4 is: "+ getString(R.string.Q4option2);
+            else  {
+                missedQuestions+= "\n"+ "The answer to Question 4 is: "+ getString(R.string.Q4option2) + " & " +getString(R.string.Q4option3);
                 fails++;
             }
         EditText editQuestionFive= (EditText) findViewById(R.id.q5Option);
@@ -74,18 +85,26 @@ public class MainActivity extends AppCompatActivity {
                 missedQuestions+= "\n"+ "The answer to Question 5 is: 969";
                 fails++;
             }
-        CheckBox question_six= (CheckBox) findViewById(R.id.q6Option3);
-        boolean answerSix= question_six.isChecked();
-            if (answerSix){
+        CheckBox question_sixA= (CheckBox) findViewById(R.id.q6Option2);
+        boolean answerSixA= question_sixA.isChecked();
+        CheckBox question_sixB= (CheckBox) findViewById(R.id.q6Option3);
+        boolean answerSixB= question_sixB.isChecked();
+        CheckBox question_sixC= (CheckBox) findViewById(R.id.q6Option1);
+        boolean answerSixC= question_sixC.isChecked();
+        CheckBox question_sixD= (CheckBox) findViewById(R.id.q6Option4);
+        boolean answerSixD= question_sixD.isChecked();
+        //ensures that the player is only awarded a score for choosing only the two correct options
+            if (answerSixA == true && answerSixB == true && answerSixC == false && answerSixD == false){
                 score++;
             }
             else {
-                missedQuestions+= "\n"+ "The answer to Question 6 is: "+ getString(R.string.Q6option3);
+                missedQuestions+= "\n"+ "The answer to Question 6 is: "+ getString(R.string.Q6option2) + " & " + getString(R.string.Q6option3);
                 fails++;
             }
-        CheckBox question_seven= (CheckBox) findViewById(R.id.q7Option1);
-        boolean answerSeven= question_seven.isChecked();
-            if (answerSeven){
+        RadioGroup question_seven= (RadioGroup) findViewById(R.id.radioQ7);
+        String answerSeven= ((RadioButton) findViewById(question_seven.getCheckedRadioButtonId())).getText().toString();
+        String answerC=getString(R.string.Q7option1);
+            if (answerSeven== answerC){
                 score++;
             }
             else {

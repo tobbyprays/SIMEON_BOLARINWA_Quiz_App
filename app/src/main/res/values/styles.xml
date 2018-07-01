@@ -8,15 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="nameOfPlayer" >
-        <!-- Customize the questions theme here. -->
+        <!-- Customize the name of player theme here. -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:paddingTop">8dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
         <item name="android:textColor">@color/questionTitleColor</item>
-        <item name="android:background">@color/questionBackgroundColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">#8B4513</item>
         <item name="android:textColorHint">@color/questionTitleColor</item>
     </style>
     <style name="questions" >
@@ -24,9 +24,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/questionTitleColor</item>
         <item name="android:background">@color/questionBackgroundColor</item>
     </style>
@@ -34,7 +33,8 @@
         <!-- Customize the questions body theme here. -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
         <item name="android:textColor">@color/questionColor</item>
     </style>
     <style name="checkBoxes" >
@@ -49,10 +49,21 @@
         <!-- Customize the editText body theme here. -->
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
         <item name="android:textColor">@color/questionColor</item>
         <item name="android:textColorHint">@color/questionColor</item>
     </style>
+
+    <style name="radioButtons" >
+        <!-- Customize the editText body theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/questionColor</item>
+        <item name="android:textColorHint">@color/questionColor</item>
+    </style>
+
     <style name="submission" >
         <!-- Customize the submit quiz button theme here. -->
         <item name="android:layout_width">match_parent</item>
@@ -61,7 +72,8 @@
         <item name="android:paddingBottom">8dp</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColorHint">@color/questionTitleColor</item>
+        <item name="android:textColor">@color/questionTitleColor</item>
+        <item name="android:background">#8B4513</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:gravity">center_horizontal</item>
     </style>

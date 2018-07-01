@@ -4,14 +4,14 @@
 
     <string name="question1">QUESTION 1</string>
     <string name="questionOne">At the birth of Jesus, three wise men came to visit him in the manger.</string>
-    <string name="Q1option1">YES</string>
-    <string name="Q1option2">NO</string>
+    <string name="Q1option1">TRUE</string>
+    <string name="Q1option2">FALSE</string>
     <string name="Q1option3">CANNOT SAY</string>
 
     <string name="question2">QUESTION 2</string>
     <string name="questionTwo">Jesus forgave the thief on the right side of the cross at golgotha.</string>
-    <string name="Q2option1">YES</string>
-    <string name="Q2option2">NO</string>
+    <string name="Q2option1">TRUE</string>
+    <string name="Q2option2">FALSE </string>
     <string name="Q2option3">CANNOT SAY</string>
 
     <string name="question3">QUESTION 3</string>
@@ -22,7 +22,7 @@
     <string name="questionFour">The following are some of the apostles except</string>
     <string name="Q4option1">PAUL</string>
     <string name="Q4option2">LUKE</string>
-    <string name="Q4option3">JAMES</string>
+    <string name="Q4option3">TIMOTHY</string>
     <string name="Q4option4">JOHN</string>
 
     <string name="question5">QUESTION 5</string>
@@ -30,16 +30,16 @@
     <string name="Q5answer">write your answer here</string>
 
     <string name="question6">QUESTION 6</string>
-    <string name="questionSix">What is the oldest book in the bible?</string>
-    <string name="Q6option1">PSALMS</string>
+    <string name="questionSix">Which of these are old testament books?</string>
+    <string name="Q6option1">PHILEMON</string>
     <string name="Q6option2">ISAIAH</string>
     <string name="Q6option3">JOB</string>
-    <string name="Q6option4">GENESIS</string>
+    <string name="Q6option4">TITUS</string>
 
     <string name="question7">QUESTION 7</string>
     <string name="questionSeven">The Areopagans were those Paul met who served an UNKNOWN GOD.</string>
-    <string name="Q7option1">YES</string>
-    <string name="Q7option2">NO</string>
+    <string name="Q7option1">TRUE</string>
+    <string name="Q7option2">FALSE</string>
     <string name="Q7option3">CANNOT SAY</string>
 
     <string name="question8">QUESTION 8</string>

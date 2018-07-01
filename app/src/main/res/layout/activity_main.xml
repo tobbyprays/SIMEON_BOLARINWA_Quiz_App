@@ -10,55 +10,80 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/b3">
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/bible_image"
+                android:scaleType="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bible"/>
             <EditText
                 android:id="@+id/name_of_player"
                 style="@style/nameOfPlayer"
-                android:hint="@string/namePlayer"
-                 />
+                android:hint="@string/namePlayer"/>
             <TextView
                 android:text="@string/question1"
                style="@style/questions"/>
+
             <TextView
                 style="@style/questionBody"
                 android:text="@string/questionOne"/>
-            <CheckBox
-                android:id="@+id/q1Option1"
-               style="@style/checkBoxes"
-                android:text="@string/Q1option1"
-                android:buttonTint="@color/questionColor"/>
-            <CheckBox
-                android:id="@+id/q1Option2"
-                style="@style/checkBoxes"
-                android:text="@string/Q1option2"
-                android:buttonTint="@color/questionColor"/>
-            <CheckBox
-                android:id="@+id/q1Option3"
-                style="@style/checkBoxes"
-                android:text="@string/Q1option3"
-                android:buttonTint="@color/questionColor"/>
+
+            <RadioGroup
+                android:id="@+id/radioQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/q1Option1"
+                    style="@style/radioButtons"
+                    android:text="@string/Q1option1"
+                    android:buttonTint="@color/questionColor"/>
+
+                <RadioButton
+                    android:id="@+id/q1Option2"
+                    style="@style/radioButtons"
+                    android:text="@string/Q1option2"
+                    android:buttonTint="@color/questionColor"/>
+
+                <RadioButton
+                    android:id="@+id/q1Option3"
+                    style="@style/radioButtons"
+                    android:text="@string/Q1option3"
+                    android:buttonTint="@color/questionColor"/>
+            </RadioGroup>
+
             <TextView
                 style="@style/questions"
                 android:text="@string/question2"/>
             <TextView
                 style="@style/questionBody"
                 android:text="@string/questionTwo"/>
-            <CheckBox
-                android:id="@+id/q2Option1"
-                style="@style/checkBoxes"
-                android:text="@string/Q2option1"
-                android:buttonTint="@color/questionColor"/>
-            <CheckBox
-                android:id="@+id/q2Option2"
-                style="@style/checkBoxes"
-                android:text="@string/Q2option2"
-                android:buttonTint="@color/questionColor"/>
-            <CheckBox
-                android:id="@+id/q2Option3"
-                style="@style/checkBoxes"
-                android:text="@string/Q2option3"
-                android:buttonTint="@color/questionColor"/>
+
+            <RadioGroup
+                android:id="@+id/radioQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/q2Option1"
+                    style="@style/radioButtons"
+                    android:text="@string/Q1option1"
+                    android:buttonTint="@color/questionColor"/>
+
+                <RadioButton
+                    android:id="@+id/q2Option2"
+                    style="@style/radioButtons"
+                    android:text="@string/Q1option2"
+                    android:buttonTint="@color/questionColor"/>
+
+                <RadioButton
+                    android:id="@+id/q2Option3"
+                    style="@style/radioButtons"
+                    android:text="@string/Q1option3"
+                    android:buttonTint="@color/questionColor"/>
+            </RadioGroup>
+
             <TextView
                 style="@style/questions"
                 android:text="@string/question3"/>
@@ -139,21 +164,30 @@
             <TextView
                 style="@style/questionBody"
                 android:text="@string/questionSeven" />
-            <CheckBox
-                android:id="@+id/q7Option1"
-                style="@style/checkBoxes"
-                android:text="@string/Q7option1"
-                android:buttonTint="@color/questionColor"/>
-            <CheckBox
-                android:id="@+id/q7Option2"
-                style="@style/checkBoxes"
-                android:text="@string/Q7option2"
-                android:buttonTint="@color/questionColor"/>
-            <CheckBox
-                android:id="@+id/q7Option3"
-                style="@style/checkBoxes"
-                android:text="@string/Q7option3"
-                android:buttonTint="@color/questionColor"/>
+            <RadioGroup
+                android:id="@+id/radioQ7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/q7Option1"
+                    style="@style/radioButtons"
+                    android:text="@string/Q7option1"
+                    android:buttonTint="@color/questionColor"/>
+
+                <RadioButton
+                    android:id="@+id/q7Option2"
+                    style="@style/radioButtons"
+                    android:text="@string/Q7option2"
+                    android:buttonTint="@color/questionColor"/>
+
+                <RadioButton
+                    android:id="@+id/q7Option3"
+                    style="@style/radioButtons"
+                    android:text="@string/Q7option3"
+                    android:buttonTint="@color/questionColor"/>
+            </RadioGroup>
+
             <TextView
                 style="@style/questions"
                 android:text="@string/question8" />
